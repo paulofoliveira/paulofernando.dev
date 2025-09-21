@@ -1,232 +1,288 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paulo Fernando - Dev</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        scroll-behavior: smooth;
-      }
-      .fade-in {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-      }
-      .fade-in-active {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .nav-link.active {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body class="bg-white text-gray-800">
-    <header class="bg-gray-900 text-white py-6 sticky top-0 z-50">
-      <div class="container mx-auto px-4 flex justify-between items-center">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paulo Fernando - Dev</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .nav-link.active {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <header class="bg-gray-900 text-white py-6 sticky top-0 z-50">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <div>
+        <h1 class="text-3xl font-bold">Paulo Fernando</h1>
+        <p class="text-green-400 font-mono text-sm">
+          Console.WriteLine(<br />"Debugging life since day 256.");
+        </p>
+      </div>
+      <!-- Menu -->
+      <nav>
+        <ul class="flex space-x-6 text-sm font-semibold">
+          <li><a href="#sobre" class="nav-link hover:underline">Sobre Mim</a></li>
+          <li><a href="#trajetoria" class="nav-link hover:underline">Minha Trajetória</a></li>
+          <li><a href="#hobbies" class="nav-link hover:underline">Meus Hobbies</a></li>
+          <li><a href="#contato" class="nav-link hover:underline">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Seção Sobre -->
+  <section id="sobre" class="fade-in scroll-mt-24 container mx-auto px-4 py-12">
+    <div class="flex flex-col md:flex-row gap-8 items-start">
+      <div class="md:w-1/3">
+        <img src="img/perfil.jpg" alt="Foto de Paulo Fernando" class="rounded-xl shadow-md" />
+      </div>
+      <div class="md:w-2/3">
+        <h2 class="text-2xl font-semibold mb-4">Sobre Mim</h2>
+        <p class="mb-4">
+          Oi, eu sou o Paulo. Muito prazer! Tenho 34 nos, nascido no dia 13/19/1991 (no dia 256 do ano que, coincidência
+          ou destino é o dia do programador). Sou Paulista, filho de baianos e moro em São Paulo.
+        </p>
+        <p class="mb-4">
+          Atuo com desenvolvimento de sistemas profissionalmente desde 2013. Comecei a estudar programação em 2008
+          praticamente com toda a minha trajetória na plataforma .NET. Concluí a pós-graduação em Cloud Computing
+          voltado para .NET e atualmente estou custando o MBA em Engenharia de Dados na <a
+            href="https://www.fiap.com.br/" target="_blank" rel="noopener">FIAP</a>, aprofundando meus conhecimentos em
+          arquitetura de dados, pipelines e soluções analíticas.
+        </p>
+        <p class="mb-4">
+          Minha experiência sempre foi voltada para a web onde passei por todo tipo de ASP.NET (webforms, MVC, API,
+          SignalR) e cheguei ao .NET Core com Blazor. Tambei atuei todo este tempo com banco de dados SQL Server. No
+          atual desafio, lido na sustenção dos legados da empresa. Gosto de estudar assuntos relacionados a performance,
+          arquitetura de software e atualmente dados e IA.
+        </p>
+        <p class="mb-4">
+          Sou movido pela curiosidade e pelo desejo de aprender coisas úteis.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="trajetoria" class="fade-in scroll-mt-24 bg-gray-100 py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-6">Minha Trajetória</h2>
+      <div class="space-y-6">
         <div>
-          <h1 class="text-3xl font-bold">Paulo Fernando</h1>
-          <p class="text-green-400 font-mono text-sm">
-            Console.WriteLine(<br />"Debugging life since day 256.");
-          </p>
+          <h3 class="text-xl font-bold">Dezembro/05</h3>
+          <p>Concluo o curso de Iniciação à Informática no SENAI Suzano, através do <a
+              href="https://www.reinodagarotada.org.br/" target="_blank" rel="noopener">Reino da Garotada de Poá</a>.
+            Foi meu primeiro contato com o mundo da computação, um curso de 100 horas.</p>
         </div>
-        <nav>
-          <ul class="flex space-x-6 text-sm font-semibold">
-            <li><a href="#sobre" class="nav-link hover:underline">Sobre Mim</a></li>
-            <li><a href="#trajetoria" class="nav-link hover:underline">Minha Trajetória</a></li>
-            <li><a href="#hobbies" class="nav-link hover:underline">Meus Hobbies</a></li>
-            <li><a href="#contato" class="nav-link hover:underline">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <section id="sobre" class="fade-in scroll-mt-24 container mx-auto px-4 py-12">
-      <div class="flex flex-col md:flex-row gap-8 items-start">
-        <div class="md:w-1/3">
-          <img src="img/perfil.jpg" alt="Foto de Paulo Fernando" class="rounded-xl shadow-md" />
+        <div>
+          <h3 class="text-xl font-bold">Dezembro/06</h3>
+          <p>Concluo o curso de Instalações Elétricas Residenciais no SENAI Suzano, também pelo Reino da Garotada de
+            Poá. Com 400 horas de treinamento, tive meu primeiro contato com o mundo da eletrecidade e até hoje mantenho
+            esses conhecimentos, com direito a instalar algumas casas sem botar fogo!</p>
         </div>
-        <div class="md:w-2/3">
-          <h2 class="text-2xl font-semibold mb-4">Sobre Mim</h2>
-          <p class="mb-4">
-            Nascido em setembro de 1991, no dia 256 do ano (coincidência ou destino, o dia do programador), vim ao mundo no Hospital São Cristóvão, em São Paulo onde vivo até hoje. Sou paulista, filho de nordestinos e carrego comigo o orgulho de ter raízes em um lugar de pessoas simples e acolhedoras.
-          </p>
-          <p class="mb-4">
-            Atuo com desenvolvimento de sistemas desde 2013, com trajetória na plataforma .NET. Concluí a pós-graduação em Cloud Computing voltado para .NET e atualmente estou curso MBA em Engenharia de Dados na <a href="https://www.fiap.com.br/" target="_blank" rel="noopener">FIAP</a>, aprofundando meus conhecimentos em arquitetura de dados, pipelines e soluções analíticas.
-          </p>
-          <p class="mb-4">
-            Minha experiência sempre foi voltado para a web, desde o webforms no passado, MVC, API e SignalR e agora com .NET Core além de boa experiência com SQL Server. No desafio atual, atuado com aplicações legadas da empresa na sustenção do produto. Me interesso por assuntos relacionado à performance, arquitetura de software e tudo o que envolva melhorar a experiência de quem usa tecnologia.
-          </p>
-          <p class="mb-4">
-            Sou movido pela curiosidade e pelo desejo de aprender e de construir coisas úteis.
-          </p>
+        <div>
+          <h3 class="text-xl font-bold">Dezembro/08</h3>
+          <p>Concluo o curso de Marcenaria de Móveis no SENAI Suzano. Aprendi desenho técnico e construção de móveis
+            como estantes e armários. Foram 800 horas de muito aprendizado.</p>
+          <p class="mt-2">Também neste período concluo um curso profissionalizante de manutenção de computadores que me
+            habilitou a prestar manutenção e ganhar meu primeiro dinheiro com os fundamentos de computação e redes.
+            Prestava manutenção para amigos, colegas e até na escola onde cursava o Ensino Médio.</p>
         </div>
-      </div>
-    </section>
-
-    <section id="trajetoria" class="fade-in scroll-mt-24 bg-gray-100 py-12">
-      <div class="container mx-auto px-4">
-        <h2 class="text-2xl font-semibold mb-6">Minha Trajetória</h2>
-        <div class="space-y-6">
-          <div>
-            <h3 class="text-xl font-bold">Dezembro/05</h3>
-            <p>Concluo o curso de Iniciação à Informática no SENAI Suzano, através do <a href="https://www.reinodagarotada.org.br/" target="_blank" rel="noopener">Reino da Garotada de Poá</a>. Foi meu primeiro contato com o mundo da computação, um curso de 100 horas.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Dezembro/06</h3>
-            <p>Concluo o curso de Instalações Elétricas Residenciais no SENAI Suzano, também pelo Reino da Garotada de Poá. Com 400 horas de treinamento, tive meu primeiro contato com o mundo da eletrecidade e até hoje mantenho esses conhecimentos, com direito a instalar algumas casas sem botar fogo!</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Dezembro/08</h3>
-            <p>Concluo o curso de Marcenaria de Móveis no SENAI Suzano. Aprendi desenho técnico e construção de móveis como estantes e armários. Foram 800 horas de muito aprendizado.</p>
-            <p class="mt-2">Também neste período concluo um curso profissionalizante de manutenção de computadores que me habilitou a prestar manutenção e ganhar meu primeiro dinheiro com os fundamentos de computação e redes. Prestava manutenção para amigos, colegas e até na escola onde cursava o Ensino Médio.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Dezembro/09</h3>
-            <p>Concluo o Ensino Médio na Escola Estadual Jardim São Paulo II, onde também participei como monitor da secretaria no último ano. No mesmo ano, concluo o Curso Técnico em Informática na ETEC Ferraz de Vasconcelos pelo Centro Paula Souza, onde tive contato com programação em VB6, Delphi 7, SQL Server e VB.NET.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Abril/10</h3>
-            <p>Meu primeiro emprego foi como Instrutor de Informática na escola Liceu Brasil em Itaquaquecetuba em São Paulo, onde realizava manutenção nos computadores e lecionava aula para crianças e adolescentes.</p>
-            <p class="mt-2">Apesar dos apenas 7 meses que fiquei na escola, fui o responsável por montar o laboratório de computadores da unidade de Poá que estavam iriam inalgurar.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Junho/11</h3>
-            <p>Na minha profissão iniciei como estagiário de TI na <a href="https://unisaudemaster.com.br/" target="_blank" rel="noopener">Unisaúde</a>, uma Corretora de Seguros através do <a href="https://portal.ciee.org.br/" target="_blank" rel="noopener">CIEE</a> (Centro de Integração Empresa Escola). Abri mão de um emprego CLT que havia acabado de conseguir para estagiar na área.</p>
-            <p class="mt-2">Tive o desafio de otimizar ao máximo meu tempo realizando a manutenção dos computadores que era a minha principal responsabilidade no momento e aprender a programar. Aproveitava para estudar, aplicar conceitos e demonstrar minhas habilidades com desenvolvimento de software que me renderam oportunidades no futuro.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Fevereiro/13</h3>
-            <p>Sou efetivado como Programador .NET Júnior na Unisaúde e participo do desenvolvimento do Painel do Corretor com ASP.NET MVC 2.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Dezembro/13</h3>
-            <p>Concluo a graduação em Sistemas de Informação pela UNISUZ (Faculdade Unida de Suzano) em uma das cidades que mais gosto de estar. Para se ter uma ideia, eu conheço mais Suzano do que Ferraz de Vasconcelos que morei mais de 30 anos da minha vida.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Janeiro/14</h3>
-            <p>Me torno Analista de Sistemas, evoluindo de Júnior até Sênior de 2014 à 2024 migrando da Unisaúde para a <a href="https://trindadetecnologia.com.br/" target="_blank" rel="noopener">Trindade Tecnologia</a> em 2017. Atuei nos principais projetos da empresa neste período e migrações de ambientes desde a Uol Diveo passando por a cloud da AWS até a CL9 e GCP. Ganhei experiência ao longo dos anos em assuntos que gosto bastante de estudar que envolve performance e arquitetura além de assuntos mais relacionados a infraestrutura como a administração de servidores de bancos de dados e web.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Julho/17</h3>
-            <p>Concluo o MBA em Soluções Corporativas e Cloud Computing na FIAP, consolidando conhecimentos na nuvem da Microsoft, empreendedorismo e explorando novas tecnologias como SharePoint.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Fevereiro/21</h3>
-            <p>Entro para o quadro societário da Trindade consolidando anos de dedicação à empresa. Foi uma experiência marcante para minha vida, onde pude aprender muito sobre o funcionamento de uma empresa, gestão e tomada de decisões.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Fevereiro/24</h3>
-            <p>Assumo a liderança na revitalização do SisWeb com foco em performance, automação de processos, segurança e distribuição da aplicação.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Fevereiro/25</h3>
-            <p>A Trindade Tecnologia é vendida para a Agger, encerrando um importante ciclo no quadro societário da empresa. Sigo com gratidão por tudo que vivi neste período, pelas conquistas alcançadas e pelos aprendizados que levarei para sempre em minha jornada.</p>
-          </div>
-		<div>
-		  <h3 class="text-xl font-bold">Mais sobre mim</h3>
-		  <p>
-			Ao longo desse período, também atuei como freelancer em alguns projetos contribuindo com manutenção de sistemas existentes e uma startup com banco MySQL, APIs e Blazor WebAssembly. Participei de migrações de ambientes da AWS para cloud proprietária e também para o GCP, além de experiências com a administração de bancos de dados MySQL e rotinas de manutenção. Atualmente estou cursando o MBA de Engenharia de Dados na FIAP – Campus da Paulista.
-		  </p>
-		</div>
+        <div>
+          <h3 class="text-xl font-bold">Dezembro/09</h3>
+          <p>Concluo o Ensino Médio na Escola Estadual Jardim São Paulo II, onde também participei como monitor da
+            secretaria no último ano. No mesmo ano, concluo o Curso Técnico em Informática na ETEC Ferraz de Vasconcelos
+            pelo Centro Paula Souza, onde tive contato com programação em VB6, Delphi 7, SQL Server e VB.NET.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Abril/10</h3>
+          <p>Meu primeiro emprego foi como Instrutor de Informática na escola Liceu Brasil em Itaquaquecetuba em São
+            Paulo, onde realizava manutenção nos computadores e lecionava aula para crianças e adolescentes.</p>
+          <p class="mt-2">Apesar dos apenas 7 meses que fiquei na escola, fui o responsável por montar o laboratório de
+            computadores da unidade de Poá que estavam iriam inalgurar.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Junho/11</h3>
+          <p>Na minha profissão iniciei como estagiário de TI na <a href="https://unisaudemaster.com.br/"
+              target="_blank" rel="noopener">Unisaúde</a>, uma Corretora de Seguros através do <a
+              href="https://portal.ciee.org.br/" target="_blank" rel="noopener">CIEE</a> (Centro de Integração Empresa
+            Escola). Abri mão de um emprego CLT que havia acabado de conseguir para estagiar na área.</p>
+          <p class="mt-2">Tive o desafio de otimizar ao máximo meu tempo realizando a manutenção dos computadores que
+            era a minha principal responsabilidade no momento e aprender a programar. Aproveitava para estudar, aplicar
+            conceitos e demonstrar minhas habilidades com desenvolvimento de software que me renderam oportunidades no
+            futuro.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Fevereiro/13</h3>
+          <p>Sou efetivado como Programador .NET Júnior na Unisaúde e participo do desenvolvimento do Painel do Corretor
+            com ASP.NET MVC 2.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Dezembro/13</h3>
+          <p>Concluo a graduação em Sistemas de Informação pela UNISUZ (Faculdade Unida de Suzano) em uma das cidades
+            que mais gosto de estar. Para se ter uma ideia, eu conheço mais Suzano do que Ferraz de Vasconcelos que
+            morei mais de 30 anos da minha vida.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Janeiro/14</h3>
+          <p>Me torno Analista de Sistemas, evoluindo de Júnior até Sênior de 2014 à 2024 migrando da Unisaúde para a <a
+              href="https://trindadetecnologia.com.br/" target="_blank" rel="noopener">Trindade Tecnologia</a> em 2017.
+            Atuei nos principais projetos da empresa neste período e migrações de ambientes desde a Uol Diveo passando
+            por a cloud da AWS até a CL9 e GCP. Ganhei experiência ao longo dos anos em assuntos que gosto bastante de
+            estudar que envolve performance e arquitetura além de assuntos mais relacionados a infraestrutura como a
+            administração de servidores de bancos de dados e web.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Julho/17</h3>
+          <p>Concluo o MBA em Soluções Corporativas e Cloud Computing na FIAP, consolidando conhecimentos na nuvem da
+            Microsoft, empreendedorismo e explorando novas tecnologias como SharePoint.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Fevereiro/21</h3>
+          <p>Entro para o quadro societário da Trindade consolidando anos de dedicação à empresa. Foi uma experiência
+            marcante para minha vida, onde pude aprender muito sobre o funcionamento de uma empresa, gestão e tomada de
+            decisões.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Fevereiro/24</h3>
+          <p>Assumo a liderança na revitalização do SisWeb com foco em performance, automação de processos, segurança e
+            distribuição da aplicação.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Fevereiro/25</h3>
+          <p>A Trindade Tecnologia é vendida para a Agger, encerrando um importante ciclo no quadro societário da
+            empresa. Sigo com gratidão por tudo que vivi neste período, pelas conquistas alcançadas e pelos aprendizados
+            que levarei para sempre em minha jornada.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Mais sobre mim</h3>
+          <p>
+            Ao longo desse período, também atuei como freelancer em alguns projetos contribuindo com manutenção de
+            sistemas existentes e uma startup com banco MySQL, APIs e Blazor WebAssembly. Participei de migrações de
+            ambientes da AWS para cloud proprietária e também para o GCP, além de experiências com a administração de
+            bancos de dados MySQL e rotinas de manutenção. Atualmente estou cursando o MBA de Engenharia de Dados na
+            FIAP – Campus da Paulista.
+          </p>
         </div>
       </div>
-    </section>
-    <section id="hobbies" class="fade-in scroll-mt-24 py-12">
-      <div class="container mx-auto px-4">
-        <h2 class="text-2xl font-semibold mb-6">Meus Hobbies</h2>
-        <div class="space-y-6">
-          <div>
-            <h3 class="text-xl font-bold">Futebol & São Paulo FC</h3>
-            <p>Sou apaixonado por futebol e torcedor do São Paulo FC. Acompanho desde 2001. De frequentar o estádio desde 2016 quando um amigo me levou e procuro ir frequentemente. Em 24/09/23, na final da Copa do Brasil (São Paulo 1 x 1 Flamengo), vivi meu melhor momento como torcedor no Morumbi.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Caminhadas & Parques</h3>
-            <p>Gosto de estar em contato com a natureza, frequentar parques e fazer caminhadas para relaxar e manter o equilíbrio.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Vinhos</h3>
-            <p>Gosto de apreciar um bom vinho – para celebrar, acompanhar um bom filme, ouvir música no Spotify ou simplesmente relaxar depois de um dia puxado.</p>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold">Festas & Novas Experiências</h3>
-            <p>Estar com amigos, ir a festas e viver novas experiências também faz parte do meu estilo de vida fora da rotina.</p>
-          </div>
+    </div>
+  </section>
+  <section id="hobbies" class="fade-in scroll-mt-24 py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-6">Meus Hobbies</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-xl font-bold">Futebol & São Paulo FC</h3>
+          <p>Sou apaixonado por futebol e torcedor do São Paulo FC. Acompanho desde 2001. De frequentar o estádio desde
+            2016 quando um amigo me levou e procuro ir frequentemente. Em 24/09/23, na final da Copa do Brasil (São
+            Paulo 1 x 1 Flamengo), vivi meu melhor momento como torcedor no Morumbi.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Caminhadas & Parques</h3>
+          <p>Gosto de estar em contato com a natureza, frequentar parques e fazer caminhadas para relaxar e manter o
+            equilíbrio.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Vinhos</h3>
+          <p>Gosto de apreciar um bom vinho – para celebrar, acompanhar um bom filme, ouvir música no Spotify ou
+            simplesmente relaxar depois de um dia puxado.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Festas & Novas Experiências</h3>
+          <p>Estar com amigos, ir a festas e viver novas experiências também faz parte do meu estilo de vida fora da
+            rotina.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-	<section id="contato" class="fade-in scroll-mt-24 container mx-auto px-4 py-12">
-	  <h2 class="text-2xl font-semibold mb-4">Contato</h2>
-	  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-		<div class="p-6 border border-gray-200 rounded-lg">
-		  <h3 class="text-xl font-bold mb-2">E-mails</h3>
-		  <ul class="space-y-1">
-			<li>
-			  <a href="mailto:paulo@inove.cloud" class="text-blue-600 hover:underline">paulo@inove.cloud</a>
-			</li>
-			<li>
-			  <a href="mailto:paulofoliveira@outlook.com" class="text-blue-600 hover:underline">paulofoliveira@outlook.com</a>
-			</li>
-		  </ul>
+  <section id="contato" class="fade-in scroll-mt-24 container mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold mb-4">Contato</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <div class="p-6 border border-gray-200 rounded-lg">
+        <h3 class="text-xl font-bold mb-2">E-mails</h3>
+        <ul class="space-y-1">
+          <li>
+            <a href="mailto:paulo@inove.cloud" class="text-blue-600 hover:underline">paulo@inove.cloud</a>
+          </li>
+          <li>
+            <a href="mailto:paulofoliveira@outlook.com"
+              class="text-blue-600 hover:underline">paulofoliveira@outlook.com</a>
+          </li>
+        </ul>
 
-		  <h3 class="text-xl font-bold mt-6 mb-2">Instagram</h3>
-		  <p>
-			<a href="https://instagram.com/_paulofoliveira" target="_blank" rel="noopener" class="text-blue-600 hover:underline">@_paulofoliveira</a>
-		  </p>
-		</div>
+        <h3 class="text-xl font-bold mt-6 mb-2">Instagram</h3>
+        <p>
+          <a href="https://instagram.com/_paulofoliveira" target="_blank" rel="noopener"
+            class="text-blue-600 hover:underline">@_paulofoliveira</a>
+        </p>
+      </div>
 
-		<div>
-		  <div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="paulo-fernando-oliveira" data-version="v1">
-			<a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/paulo-fernando-oliveira?trk=profile-badge" rel="noopener"></a>
-		  </div>
-		</div>
-	  </div>
-	</section>
+      <div>
+        <div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="medium" data-theme="light"
+          data-type="VERTICAL" data-vanity="paulo-fernando-oliveira" data-version="v1">
+          <a class="badge-base__link LI-simple-link"
+            href="https://br.linkedin.com/in/paulo-fernando-oliveira?trk=profile-badge" rel="noopener"></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer class="bg-gray-900 text-white text-center py-6">
-      <p>&copy; 2025 Paulo Fernando. Todos os direitos reservados.</p>
-    </footer>
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 Paulo Fernando. Todos os direitos reservados.</p>
+  </footer>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <script>
-      // Fade-in animation
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in-active');
-          }
-        });
-      }, {
-        threshold: 0.1
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <script>
+    // Fade-in animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-active');
+        }
       });
+    }, {
+      threshold: 0.1
+    });
 
-      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-      // ScrollSpy para navegação
-      const sections = document.querySelectorAll("section[id]");
-      const navLinks = document.querySelectorAll(".nav-link");
+    // ScrollSpy para navegação
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
 
-      window.addEventListener("scroll", () => {
-        let current = "";
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop - 100;
-          if (pageYOffset >= sectionTop) {
-            current = section.getAttribute("id");
-          }
-        });
-        navLinks.forEach(link => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${current}`) {
-            link.classList.add("active");
-          }
-        });
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
       });
-    </script>
-  </body>
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+
 </html>
-
