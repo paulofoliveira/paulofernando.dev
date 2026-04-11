@@ -4,6 +4,7 @@ Site pessoal focado em trajetória, habilidades e contato.
 
 ## Seções
 - Sobre mim
+- Estudos
 - Minha trajetória
 - Meus hobbies
 - Contato
