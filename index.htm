@@ -74,16 +74,17 @@
       <div class="md:w-2/3">
         <h2 class="text-2xl font-semibold mb-4">Sobre Mim</h2>
         <p class="mb-4">
-          Oi, eu sou o Paulo. Muito prazer! Tenho 34 anos, nascido no dia 256 (13/09), que, coincidentemente,
-          é o Dia do Programador. Sou paulista, filho de nordestinos de Rio de Contas - BA, morei quase toda a minha
-          vida em Ferraz de Vasconcelos, e, atualmente, moro em São Paulo.
+          Oi, eu sou o Paulo. Muito prazer! Tenho <span id="current-age">34</span> anos, nascido no dia 256 (13/09),
+          que, coincidentemente, é o Dia do Programador. Sou paulista, filho de nordestinos de Rio de Contas - BA, morei
+          quase toda a minha vida em Ferraz de Vasconcelos, e, atualmente, moro em São Paulo.
         </p>
         <p class="mb-4">
           Atuo com desenvolvimento de sistemas desde 2011 onde comecei como estagiário em TI. Comecei a estudar
-          programação em 2008 e praticamente toda a minha trajetória foi construída na plataforma .NET. Concluí a
-          pós-graduação em Cloud Computing voltada para .NET e, atualmente, curso o MBA em Engenharia de Dados na <a
-            href="https://www.fiap.com.br/" target="_blank" rel="noopener">FIAP</a>, aprofundando meus conhecimentos em
-          arquitetura de dados, pipelines de dados e soluções analíticas.
+          programação em 2008 e praticamente toda a minha trajetória foi construída na plataforma .NET. Concluí o MBA
+          em Soluções Corporativas e Cloud Computing na Plataforma .NET em 2017 e o MBA em Engenharia de Dados em 2026,
+          ambos na <a href="https://www.fiap.com.br/" target="_blank" rel="noopener">FIAP</a>. No MBA em Engenharia de
+          Dados, tive contato com arquitetura de dados, pipelines de dados e soluções analíticas, adquirindo uma boa
+          base para aprofundar meus estudos nesses temas daqui em diante.
         </p>
         <p class="mb-4">
           Minha experiência sempre foi voltada para a web, onde passei por todos os tipos de ASP.NET (Web Forms, MVC,
@@ -120,9 +121,9 @@
           <h3 class="text-xl font-bold">Pluralsight</h3>
           <p class="my-2">
             Portal internacional pago, mas com curadoria forte (muitos MVPs e referências da comunidade). Consumo
-            bastante conteúdo de .NET e Microsoft, sem deixar de explorar outras stacks. Atualmente, muito por conta do
-            meu MBA tenho visto assuntos relacionados com python, arquitetura distribuída de dados, MongoDB, Apache
-            Spark, Databricks entre outros.
+            bastante conteúdo de .NET e Microsoft, sem deixar de explorar outras stacks. Durante o MBA em Engenharia de
+            Dados, concluído em 2026, tive contato com Python, arquitetura distribuída de dados, MongoDB, Apache Spark e
+            Databricks, entre outros, e adquiri uma boa base para continuar estudando esses assuntos.
           </p>
         </div>
         <div>
@@ -316,6 +317,15 @@
           </p>
         </div>
         <div>
+          <h3 class="text-xl font-bold">Julho/26</h3>
+          <p class="my-2">
+            Concluí o MBA em Engenharia de Dados na <a href="https://www.fiap.com.br/" target="_blank"
+              rel="noopener">FIAP</a>, onde tive contato com arquitetura de dados, pipelines de dados e soluções
+            analíticas, além de inteligência artificial, modelos open source e ferramentas como LangChain, Ollama e
+            LM Studio. Com isso, adquiri uma boa base para aprofundar meus estudos a partir de agora.
+          </p>
+        </div>
+        <div>
           <h3 class="text-xl font-bold">Mais sobre mim</h3>
           <p class="my-2">
             Ao longo desse período, realizei trabalhos freelancers (sempre no universo .NET) e também atuei em
@@ -369,15 +379,16 @@
             Até mesmo ouvindo uma música no Spotify ou simplesmente relaxar depois de um dia puxado.</p>
         </div>
         <div>
-          <h3 class="text-xl font-bold">Dançar Forró</h3>
-          <p class="my-2">Estou aprendendo a dançar forró, um sonho antigo que decidi perseguir. Vejo isso como parte do
-            meu processo de evolução pessoal, explorando novos ambientes e habilidades além da tecnologia.</p>
+          <h3 class="text-xl font-bold">Dançar</h3>
+          <p class="my-2">Dançar tem sido uma forma de sair da rotina e cuidar de mim. O forró, um sonho antigo que
+            decidi colocar em prática, tem sido como uma terapia para mim. Agora, também estou começando a aprender
+            sertanejo universitário também.</p>
         </div>
         <div>
-          <h3 class="text-xl font-bold">Sair com os amigos</h3>
-          <p class="my-2">Morando em São Paulo, tenho saído mais de casa e passei a ir a festas e viver novas
-            experiências com amigos conhecendo lugares e pessoas. Minha mais nova experiência é aprender a dançar forró.
-            Um sonho antigo que estou colocando em prática!
+          <h3 class="text-xl font-bold">Sair mais</h3>
+          <p class="my-2">Morando em São Paulo, tenho procurado sair mais, seja para ir a festas e shows, conhecer gente
+            nova ou viver novas experiências com amigos. Quero ampliar cada vez mais esse repertório, explorando também
+            restaurantes, teatros e outros lugares e atividades que a cidade oferece.
           </p>
         </div>
       </div>
@@ -427,7 +438,7 @@
   </section>
 
   <footer class="bg-gray-900 text-white text-center py-6">
-    <p>&copy; 2026 Paulo Fernando. Todos os direitos reservados.</p>
+    <p>&copy; <span id="current-year">2026</span> Paulo Fernando. Todos os direitos reservados.</p>
   </footer>
 
   <!-- Tailwind (CDN) -->
@@ -436,6 +447,19 @@
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
   <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+
+    const birthDate = new Date(1991, 8, 13);
+    const today = new Date();
+    let currentAge = today.getFullYear() - birthDate.getFullYear();
+    const birthdayThisYear = new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate());
+
+    if (today < birthdayThisYear) {
+      currentAge--;
+    }
+
+    document.getElementById("current-age").textContent = currentAge;
+
     // animação de entrada
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
