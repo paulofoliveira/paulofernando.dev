@@ -26,6 +26,24 @@
     .nav-link.active {
       text-decoration: underline;
     }
+
+    #console-message.is-typing::after {
+      content: "▋";
+      margin-left: 2px;
+      animation: blink-cursor 0.8s step-end infinite;
+    }
+
+    @keyframes blink-cursor {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #console-message.is-typing::after {
+        animation: none;
+      }
+    }
   </style>
 </head>
 
@@ -35,7 +53,7 @@
       <div>
         <h1 class="text-3xl font-bold">Paulo Fernando</h1>
         <p class="text-green-400 font-mono text-sm">
-          Console.WriteLine(<br />"Debugging life since day 256.");
+          Console.WriteLine(<br />"<span id="console-message">Debugging life since day 256.</span>");
         </p>
       </div>
 
@@ -91,9 +109,6 @@
           APIs, SignalR) e cheguei ao .NET Core com Blazor e banco de dados SQL Server. No
           desafio atual, atuo na sustentação dos sistemas legados. Gosto de estudar assuntos relacionados à
           performance, arquitetura de software e, atualmente, dados e IA.
-        </p>
-        <p class="mb-4">
-          Sou movido pela curiosidade e pelo desejo de aprender.
         </p>
       </div>
     </div>
@@ -161,10 +176,11 @@
           </p>
         </div>
         <div>
-          <h3 class="text-xl font-bold">Livros e cursos complementares</h3>
+          <h3 class="text-xl font-bold">Livros e referências complementares</h3>
           <p class="my-2">
-            Livros da PacktPub, Casa do Código e cursos da Alura. A maioria é
-            introdutória, mas ótimo para primeiro contato ou quando o inglês é uma barreira.
+            Livros da PacktPub e Casa do Código, além de cursos da Alura, Tech Leads Club e LinkedIn Learning.
+            A disponibilidade de conteúdo em português é um ponto forte para manter contato com tecnologia quando o
+            inglês é uma barreira.
           </p>
         </div>
       </div>
@@ -459,6 +475,35 @@
     }
 
     document.getElementById("current-age").textContent = currentAge;
+
+    const millisecondsPerDay = 1000 * 60 * 60 * 24;
+    const birthDateUtc = Date.UTC(birthDate.getFullYear(), birthDate.getMonth(), birthDate.getDate());
+    const todayUtc = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+    const daysAlive = Math.floor((todayUtc - birthDateUtc) / millisecondsPerDay);
+
+    const consoleMessage = document.getElementById("console-message");
+    const dynamicMessage = `Debugging life for ${daysAlive.toLocaleString("en-US")} days.`;
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (prefersReducedMotion) {
+      consoleMessage.textContent = dynamicMessage;
+    } else {
+      consoleMessage.textContent = "";
+      consoleMessage.classList.add("is-typing");
+
+      let characterIndex = 0;
+
+      const typeNextCharacter = () => {
+        consoleMessage.textContent += dynamicMessage[characterIndex];
+        characterIndex++;
+
+        if (characterIndex < dynamicMessage.length) {
+          window.setTimeout(typeNextCharacter, 45);
+        }
+      };
+
+      window.setTimeout(typeNextCharacter, 350);
+    }
 
     // animação de entrada
     const observer = new IntersectionObserver((entries) => {
