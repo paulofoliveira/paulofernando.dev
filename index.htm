@@ -35,7 +35,7 @@
       <div>
         <h1 class="text-3xl font-bold">Paulo Fernando</h1>
         <p class="text-green-400 font-mono text-sm">
-          Console.WriteLine(<br />"Debugging life since day 256.");
+          Console.WriteLine(<br />"<span id="console-message">Debugging life since day 256.</span>");
         </p>
       </div>
 
@@ -459,6 +459,14 @@
     }
 
     document.getElementById("current-age").textContent = currentAge;
+
+    const millisecondsPerDay = 1000 * 60 * 60 * 24;
+    const birthDateUtc = Date.UTC(birthDate.getFullYear(), birthDate.getMonth(), birthDate.getDate());
+    const todayUtc = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+    const daysAlive = Math.floor((todayUtc - birthDateUtc) / millisecondsPerDay);
+
+    document.getElementById("console-message").textContent =
+      `Debugging life for ${daysAlive.toLocaleString("en-US")} days.`;
 
     // animação de entrada
     const observer = new IntersectionObserver((entries) => {
