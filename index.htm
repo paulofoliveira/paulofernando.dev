@@ -74,9 +74,9 @@
       <div class="md:w-2/3">
         <h2 class="text-2xl font-semibold mb-4">Sobre Mim</h2>
         <p class="mb-4">
-          Oi, eu sou o Paulo. Muito prazer! Tenho 34 anos, nascido no dia 256 (13/09), que, coincidentemente,
-          é o Dia do Programador. Sou paulista, filho de nordestinos de Rio de Contas - BA, morei quase toda a minha
-          vida em Ferraz de Vasconcelos, e, atualmente, moro em São Paulo.
+          Oi, eu sou o Paulo. Muito prazer! Tenho <span id="current-age">34</span> anos, nascido no dia 256 (13/09),
+          que, coincidentemente, é o Dia do Programador. Sou paulista, filho de nordestinos de Rio de Contas - BA, morei
+          quase toda a minha vida em Ferraz de Vasconcelos, e, atualmente, moro em São Paulo.
         </p>
         <p class="mb-4">
           Atuo com desenvolvimento de sistemas desde 2011 onde comecei como estagiário em TI. Comecei a estudar
@@ -448,6 +448,17 @@
 
   <script>
     document.getElementById("current-year").textContent = new Date().getFullYear();
+
+    const birthDate = new Date(1991, 8, 13);
+    const today = new Date();
+    let currentAge = today.getFullYear() - birthDate.getFullYear();
+    const birthdayThisYear = new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate());
+
+    if (today < birthdayThisYear) {
+      currentAge--;
+    }
+
+    document.getElementById("current-age").textContent = currentAge;
 
     // animação de entrada
     const observer = new IntersectionObserver((entries) => {
