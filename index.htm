@@ -438,7 +438,7 @@
   </section>
 
   <footer class="bg-gray-900 text-white text-center py-6">
-    <p>&copy; 2026 Paulo Fernando. Todos os direitos reservados.</p>
+    <p>&copy; <span id="current-year">2026</span> Paulo Fernando. Todos os direitos reservados.</p>
   </footer>
 
   <!-- Tailwind (CDN) -->
@@ -447,6 +447,8 @@
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
   <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+
     // animação de entrada
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
