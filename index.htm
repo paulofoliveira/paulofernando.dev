@@ -26,6 +26,24 @@
     .nav-link.active {
       text-decoration: underline;
     }
+
+    #console-message.is-typing::after {
+      content: "▋";
+      margin-left: 2px;
+      animation: blink-cursor 0.8s step-end infinite;
+    }
+
+    @keyframes blink-cursor {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #console-message.is-typing::after {
+        animation: none;
+      }
+    }
   </style>
 </head>
 
@@ -465,8 +483,29 @@
     const todayUtc = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
     const daysAlive = Math.floor((todayUtc - birthDateUtc) / millisecondsPerDay);
 
-    document.getElementById("console-message").textContent =
-      `Debugging life for ${daysAlive.toLocaleString("en-US")} days.`;
+    const consoleMessage = document.getElementById("console-message");
+    const dynamicMessage = `Debugging life for ${daysAlive.toLocaleString("en-US")} days.`;
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (prefersReducedMotion) {
+      consoleMessage.textContent = dynamicMessage;
+    } else {
+      consoleMessage.textContent = "";
+      consoleMessage.classList.add("is-typing");
+
+      let characterIndex = 0;
+
+      const typeNextCharacter = () => {
+        consoleMessage.textContent += dynamicMessage[characterIndex];
+        characterIndex++;
+
+        if (characterIndex < dynamicMessage.length) {
+          window.setTimeout(typeNextCharacter, 45);
+        }
+      };
+
+      window.setTimeout(typeNextCharacter, 350);
+    }
 
     // animação de entrada
     const observer = new IntersectionObserver((entries) => {
