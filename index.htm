@@ -57,29 +57,34 @@
         </p>
       </div>
 
-      <!-- Menu -->
-      <nav class="w-full md:w-auto">
-        <!-- Combo no mobile -->
-        <label for="mobile-nav" class="sr-only">Navegação</label>
-        <select id="mobile-nav"
-          class="block md:hidden w-full bg-gray-800 text-white border border-gray-700 rounded-md px-3 py-2"
-          aria-label="Navegação rápida">
-          <option value="#sobre">Sobre Mim</option>
-          <option value="#estudos">Estudos</option>
-          <option value="#trajetoria">Minha Trajetória</option>
-          <option value="#hobbies">Meus Hobbies</option>
-          <option value="#contato">Contato</option>
-        </select>
+      <div class="w-full md:w-auto flex items-center gap-3 md:gap-6">
+        <!-- Menu -->
+        <nav class="flex-1 md:flex-none md:w-auto">
+          <!-- Combo no mobile -->
+          <label for="mobile-nav" class="sr-only">Navegação</label>
+          <select id="mobile-nav"
+            class="block md:hidden w-full bg-gray-800 text-white border border-gray-700 rounded-md px-3 py-2"
+            aria-label="Navegação rápida">
+            <option value="#sobre">Sobre Mim</option>
+            <option value="#estudos">Estudos</option>
+            <option value="#trajetoria">Minha Trajetória</option>
+            <option value="#hobbies">Meus Hobbies</option>
+            <option value="#contato">Contato</option>
+          </select>
 
-        <!-- Lista no desktop -->
-        <ul class="hidden md:flex md:space-x-6 text-sm font-semibold">
-          <li><a href="#sobre" class="nav-link hover:underline">Sobre Mim</a></li>
-          <li><a href="#estudos" class="nav-link hover:underline">Estudos</a></li>
-          <li><a href="#trajetoria" class="nav-link hover:underline">Minha Trajetória</a></li>
-          <li><a href="#hobbies" class="nav-link hover:underline">Meus Hobbies</a></li>
-          <li><a href="#contato" class="nav-link hover:underline">Contato</a></li>
-        </ul>
-      </nav>
+          <!-- Lista no desktop -->
+          <ul class="hidden md:flex md:space-x-6 text-sm font-semibold">
+            <li><a href="#sobre" class="nav-link hover:underline">Sobre Mim</a></li>
+            <li><a href="#estudos" class="nav-link hover:underline">Estudos</a></li>
+            <li><a href="#trajetoria" class="nav-link hover:underline">Minha Trajetória</a></li>
+            <li><a href="#hobbies" class="nav-link hover:underline">Meus Hobbies</a></li>
+            <li><a href="#contato" class="nav-link hover:underline">Contato</a></li>
+          </ul>
+        </nav>
+        <a id="language-toggle" href="?lang=en" hreflang="en"
+          class="self-start md:self-auto inline-flex items-center justify-center rounded-md border border-gray-600 px-3 py-2 text-sm font-semibold hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-green-400"
+          aria-label="Exibir esta página em inglês">EN</a>
+      </div>
     </div>
   </header>
 
@@ -93,8 +98,8 @@
         <h2 class="text-2xl font-semibold mb-4">Sobre Mim</h2>
         <p class="mb-4">
           Oi, eu sou o Paulo. Muito prazer! Tenho <span id="current-age">34</span> anos, nascido no dia 256 (13/09),
-          que, coincidentemente, é o Dia do Programador. Sou paulista, filho de nordestinos de Rio de Contas - BA, morei
-          quase toda a minha vida em Ferraz de Vasconcelos, e, atualmente, moro em São Paulo.
+          que, coincidentemente, é o Dia do Programador. Sou paulista, filho de nordestinos, morei
+          por 32 anos em Ferraz de Vasconcelos, e, atualmente, moro em São Paulo.
         </p>
         <p class="mb-4">
           Atuo com desenvolvimento de sistemas desde 2011 onde comecei como estagiário em TI. Comecei a estudar
@@ -163,9 +168,8 @@
           <p class="my-2">
             Sobre referências brasileiras: Giovani Bassi, Elemar Jr, Diego Nogare que tive o prazer de ter como
             professor na FIAP e Fabiano Amorim, de quem fui aluno em cursos de SQL Server Internals da Power Tunning.
-            No início da carreira, acompanhei bastante o Alexandre Tarifa, que trabalhava no portal Minha Vida (não sei
-            se ainda está em tech), e o Rodolfo Fandino. Ambos excelentes em ASP.NET, IIS e desenvolvimento web.
-            E claro, a turma da Power Tuning continua sendo referência quando o assunto é SQL Server.
+            No início da carreira, acompanhei bastante o Alexandre Tarifa, que trabalhava do portal Minha Vida. Muitos
+            desses caras são excelentes em ASP.NET, IIS, desenvolvimento de software e SQL Server.
           </p>
         </div>
         <div>
@@ -178,9 +182,8 @@
         <div>
           <h3 class="text-xl font-bold">Livros e referências complementares</h3>
           <p class="my-2">
-            Livros da PacktPub e Casa do Código, além de cursos da Alura, Tech Leads Club e LinkedIn Learning.
-            A disponibilidade de conteúdo em português é um ponto forte para manter contato com tecnologia quando o
-            inglês é uma barreira.
+            Sou da turma dos livros Step by Step da Microsoft. Tenho o de desenvolvimento em C# e ASP.NET até hoje.
+            Gosto do Tech Leads Club, LinkedIn Learning e PacktPub.
           </p>
         </div>
       </div>
@@ -207,15 +210,13 @@
           <p class="my-2">Concluí o curso de Instalações Elétricas Residenciais no SENAI Suzano, também no Reino, em um
             curso com 400
             horas, no qual tive meu primeiro contato com o mundo da eletricidade e, até hoje, mantenho
-            a prática aprendida. Ao longo dos anos, fiz algumas instalações, onde pude refazer tudo do zero! Até onde
-            sei, nunca coloquei fogo na casa de ninguém! =p</p>
+            a prática aprendida. Ao longo dos anos, fiz algumas instalações, onde pude refazer tudo do zero.</p>
         </div>
         <div>
           <h3 class="text-xl font-bold">Dezembro/08</h3>
           <p class="my-2">Concluí o curso de Marcenaria de Móveis no SENAI Suzano. Aprendi desenho técnico e construção
             de móveis,
-            como estantes e armários. Foram 800 horas de muito aprendizado. Infelizmente não tenho espaço suficiente
-            para montar uma marcenaria em casa! =p</p>
+            como estantes e armários. Foram 800 horas de muito aprendizado.</p>
           <p class="mt-2">Também nesse período, concluí um curso profissionalizante de manutenção de computadores, que
             me
             permitiu começar a ganhar algum dinheiro com a manutenção dos equipamentos de amigos e vizinhos.
@@ -259,8 +260,8 @@
             Painel do
             Corretor
             com ASP.NET MVC 2. Aprendi muito com o <a href="https://www.linkedin.com/in/oliveiracdz/" target="_blank"
-              rel="noopener">Daniel Oliveira</a>, que foi meu mentor e me ensinou demais! Não é à toa que costumo
-            chamá-lo de mestre. O cara é bom!</p>
+              rel="noopener">Daniel Oliveira</a>, que foi meu mentor e me ensinou muito. Com certeza, cheguei até aqui
+            pelo que aprendi com ele.</p>
         </div>
         <div>
           <h3 class="text-xl font-bold">Dezembro/13</h3>
@@ -272,12 +273,15 @@
         </div>
         <div>
           <h3 class="text-xl font-bold">Janeiro/14</h3>
-          <p class="my-2">Tornei-me Analista de Sistemas e evoluí de Júnior a Sênior entre 2014 e 2024, tendo migrado da
-            Unisaúde para a <a href="https://trindadetecnologia.com.br/" target="_blank" rel="noopener">Trindade
+          <p class="my-2">Tornei-me Analista de Sistemas e evoluí de Júnior a Sênior entre 2014 e 2024, tendo migrado de
+            empresa da
+            <a href="https://unisaudemaster.com.br" target="_blank" rel="noopener">Unisaúde</a> para a <a
+              href="https://trindadetecnologia.com.br/" target="_blank" rel="noopener">Trindade
               Tecnologia</a> em 2017.
             Atuei nos principais projetos da empresa nesse período e em migrações de ambientes desde a UOL Diveo,
             passando
-            pela nuvem da AWS até a CL9 e o GCP. Ao longo dos anos, ganhei experiência tanto em desenvolvimento quanto
+            pela nuvem da AWS até a CL9 e o Google Cloud onde mais atuei quando falamos de Cloud Computing. Ao longo dos
+            anos, ganhei experiência tanto em desenvolvimento quanto
             em
             infraestrutura.
           </p>
@@ -287,8 +291,8 @@
           <p class="my-2">Concluí o MBA em Soluções Corporativas e Cloud Computing na Plataforma .NET (era assim que o
             curso se
             chamava)
-            na FIAP, onde tive a oportunidade de evoluir na carreira de desenvolvimento de software com aplicação
-            para a nuvem e também em infraestrutura.</p>
+            na FIAP, onde tive a oportunidade de evoluir na carreira de desenvolvimento de software com o ecossistema da
+            Microsoft para nuvem (Microsoft Azure).</p>
         </div>
         <div>
           <h3 class="text-xl font-bold">Fevereiro/21</h3>
@@ -300,7 +304,7 @@
             uma empresa: tomada de decisão, riscos, desafios operacionais, responsabilidades estratégicas e o impacto
             real das escolhas no negócio e nas pessoas.
 
-            Foi um período de intenso crescimento profissional e pessoal, consolidando uma visão mais ampla sobre
+            Foi um período de intenso crescimento profissional e pessoal, melhorando minha visão sobre
             produto, gestão e sustentabilidade de longo prazo.
           </p>
         </div>
@@ -315,20 +319,22 @@
           <p class="my-2">
             Em fevereiro de 2025, a <a
               href="https://exame.com/negocios/casa-do-corretor-de-seguros-agger-faz-segunda-aquisicao-em-um-ano/"
-              target="_blank" rel="noopener">Trindade teve seu ciclo concluído com a venda para a Agger</a>, marcando o
-            encerramento de uma trajetória iniciada em 2011 e o início de uma nova fase ao integrar uma organização
-            maior, com cultura, história, missão, visão e valores fortemente alinhados aos da Trindade.
+              target="_blank" rel="noopener">Trindade teve seu ciclo concluído com a venda para a Agger S.A.</a>,
+            marcando o
+            encerramento de uma trajetória e o início de uma nova fase ao integrar uma organização
+            maior, com princípios fortemente alinhados aos da Trindade.
 
-            Neste novo contexto, mantive minha atuação como líder técnico, apoiando a liderança da
-            Agger no processo de integração do legado e na evolução do produto, em um movimento que, mais adiante, se
-            estende à Dimensa, empresa que adquiriu a Agger.
+            Neste novo contexto, mantive minha atuação como liderança ténica, apoiando a Agger na sustentação
+            do legado em um movimento que, mais adiante, se estende à Dimensa Tecnologia (Totvs + B3), empresa que
+            adquiriu a Agger.
           </p>
         </div>
         <div>
           <h3 class="text-xl font-bold">Fevereiro/26</h3>
           <p class="my-2">
-            Em fevereiro de 2026, Inicio uma nova etapa na Dimensa Tecnologia atuando como desenvolvedor
-            referência dos projetos legados da Trindade, apoiando a evolução e reestruturação dos produtos da BU de
+            Em fevereiro de 2026, Inicio uma nova etapa na Dimensa atuando como desenvolvedor
+            referência dos projetos legados da Trindade, apoiando a evolução e reestruturação dos produtos dentro da BU
+            de
             Seguros.
           </p>
         </div>
@@ -346,8 +352,9 @@
           <p class="my-2">
             Ao longo desse período, realizei trabalhos freelancers (sempre no universo .NET) e também atuei em
             alguns projetos, contribuindo com a manutenção de sistemas existentes e em uma startup com banco MySQL, APIs
-            e um novo projeto em Blazor WebAssembly. Fiz migrações de ambientes da AWS para o GCP, além de ter
-            experiência com a administração de bancos de dados e rotinas de manutenção.
+            e um novo projeto em Blazor WebAssembly. Fiz migrações de ambientes da AWS para o Google Cloud, além de ter
+            experiência com a administração de bancos de dados e rotinas de manutenção tanto no SQL Server quanto no
+            MySQL.
           </p>
           <p class="my-2">
             Entre 2021 e 2025, fui sócio da Trindade Tecnologia.
@@ -355,8 +362,7 @@
             direcionamento do negócio.
 
             Nesse período, tive a oportunidade de participar do processo de venda da empresa, vivenciando de perto um
-            M&A na prática. A experiência trouxe aprendizados importantes sobre tomada de decisão em momentos críticos,
-            alinhamento entre sócios e o impacto direto da tecnologia nos rumos do negócio.
+            M&A na prática.
           </p>
         </div>
       </div>
@@ -459,6 +465,7 @@
 
   <!-- Tailwind (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="i18n.js"></script>
   <!-- LinkedIn badge -->
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
