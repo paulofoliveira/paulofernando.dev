@@ -57,29 +57,34 @@
         </p>
       </div>
 
-      <!-- Menu -->
-      <nav class="w-full md:w-auto">
-        <!-- Combo no mobile -->
-        <label for="mobile-nav" class="sr-only">Navegação</label>
-        <select id="mobile-nav"
-          class="block md:hidden w-full bg-gray-800 text-white border border-gray-700 rounded-md px-3 py-2"
-          aria-label="Navegação rápida">
-          <option value="#sobre">Sobre Mim</option>
-          <option value="#estudos">Estudos</option>
-          <option value="#trajetoria">Minha Trajetória</option>
-          <option value="#hobbies">Meus Hobbies</option>
-          <option value="#contato">Contato</option>
-        </select>
+      <div class="w-full md:w-auto flex items-center gap-3 md:gap-6">
+        <!-- Menu -->
+        <nav class="flex-1 md:flex-none md:w-auto">
+          <!-- Combo no mobile -->
+          <label for="mobile-nav" class="sr-only">Navegação</label>
+          <select id="mobile-nav"
+            class="block md:hidden w-full bg-gray-800 text-white border border-gray-700 rounded-md px-3 py-2"
+            aria-label="Navegação rápida">
+            <option value="#sobre">Sobre Mim</option>
+            <option value="#estudos">Estudos</option>
+            <option value="#trajetoria">Minha Trajetória</option>
+            <option value="#hobbies">Meus Hobbies</option>
+            <option value="#contato">Contato</option>
+          </select>
 
-        <!-- Lista no desktop -->
-        <ul class="hidden md:flex md:space-x-6 text-sm font-semibold">
-          <li><a href="#sobre" class="nav-link hover:underline">Sobre Mim</a></li>
-          <li><a href="#estudos" class="nav-link hover:underline">Estudos</a></li>
-          <li><a href="#trajetoria" class="nav-link hover:underline">Minha Trajetória</a></li>
-          <li><a href="#hobbies" class="nav-link hover:underline">Meus Hobbies</a></li>
-          <li><a href="#contato" class="nav-link hover:underline">Contato</a></li>
-        </ul>
-      </nav>
+          <!-- Lista no desktop -->
+          <ul class="hidden md:flex md:space-x-6 text-sm font-semibold">
+            <li><a href="#sobre" class="nav-link hover:underline">Sobre Mim</a></li>
+            <li><a href="#estudos" class="nav-link hover:underline">Estudos</a></li>
+            <li><a href="#trajetoria" class="nav-link hover:underline">Minha Trajetória</a></li>
+            <li><a href="#hobbies" class="nav-link hover:underline">Meus Hobbies</a></li>
+            <li><a href="#contato" class="nav-link hover:underline">Contato</a></li>
+          </ul>
+        </nav>
+        <a id="language-toggle" href="?lang=en" hreflang="en"
+          class="self-start md:self-auto inline-flex items-center justify-center rounded-md border border-gray-600 px-3 py-2 text-sm font-semibold hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-green-400"
+          aria-label="Exibir esta página em inglês">EN</a>
+      </div>
     </div>
   </header>
 
@@ -459,6 +464,7 @@
 
   <!-- Tailwind (CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="i18n.js"></script>
   <!-- LinkedIn badge -->
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
@@ -482,7 +488,10 @@
     const daysAlive = Math.floor((todayUtc - birthDateUtc) / millisecondsPerDay);
 
     const consoleMessage = document.getElementById("console-message");
-    const dynamicMessage = `Debugging life for ${daysAlive.toLocaleString("en-US")} days.`;
+    const isEnglish = document.documentElement.lang === "en";
+    const dynamicMessage = isEnglish
+      ? `Debugging life for ${daysAlive.toLocaleString("en-US")} days.`
+      : `Depurando a vida há ${daysAlive.toLocaleString("pt-BR")} dias.`;
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     if (prefersReducedMotion) {

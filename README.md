@@ -2,6 +2,8 @@
 
 Site pessoal focado em trajetória, habilidades e contato.
 
+Disponível em português e inglês por meio do seletor de idioma no cabeçalho.
+
 ## Seções
 - Sobre mim
 - Estudos
