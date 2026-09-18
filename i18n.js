@@ -125,7 +125,7 @@
     "My Hobbies",
     "Learning about technology",
     "Learning about technology is a longtime hobby that remains part of my life. I am currently exploring the data engineering topics I studied during my recently completed MBA in greater depth, as well as studying artificial intelligence and Next.js.",
-    "Visiting parks",
+    "Walking and enjoying nature",
     "I enjoy being close to nature and visiting parks to walk and maintain balance in my life. My favorite park is Parque Centenário da Imigração Japonesa in Mogi das Cruzes.",
     "Soccer and São Paulo FC",
     "I am passionate about soccer and support São Paulo FC. I have followed the sport since 2001 and have gone to the stadium whenever possible since 2016. On September 24, 2023, during the Copa do Brasil final, I experienced my greatest moment as a fan in the stadium when the club completed its collection of major titles!",
