@@ -139,7 +139,6 @@
 
   translateAll("#contato h2, #contato h3", [
     "Contact",
-    "Phone",
     "Email addresses",
     "Instagram",
     "Facebook"
