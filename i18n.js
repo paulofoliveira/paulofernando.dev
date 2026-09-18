@@ -141,9 +141,7 @@
     "Contact",
     "Email addresses",
     "Instagram",
-    "Facebook"
+    "Facebook",
+    "LinkedIn"
   ]);
-
-  const linkedInBadge = document.querySelector(".LI-profile-badge");
-  if (linkedInBadge) linkedInBadge.dataset.locale = "en_US";
 })();
