@@ -145,10 +145,6 @@
     "Facebook"
   ]);
 
-  translateAll("footer p", [
-    `&copy; <span id="current-year">2026</span> Paulo Fernando. All rights reserved.`
-  ]);
-
   const linkedInBadge = document.querySelector(".LI-profile-badge");
   if (linkedInBadge) linkedInBadge.dataset.locale = "en_US";
 })();
