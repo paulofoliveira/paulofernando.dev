@@ -135,7 +135,9 @@
     "Wine",
     "I also enjoy a good wine—to celebrate, accompany a good movie or good company, listen to music on Spotify, or simply relax after a demanding day.",
     "Dancing",
-    "Dancing has become a way to break out of my routine and take care of myself. Forró, a long-held dream I finally decided to pursue, has been like therapy for me. I currently take forró and sertanejo universitário classes at Escola Mega Dança in downtown São Paulo."
+    "Dancing has become a way to break out of my routine and take care of myself. Forró, a long-held dream I finally decided to pursue, has been like therapy for me. I currently take forró and sertanejo universitário classes at Escola Mega Dança in downtown São Paulo.",
+    "Spending time with friends",
+    "I have a small circle of friends, but I enjoy being with them and sharing good moments. Whether we go out, watch a movie, grab something to eat, or simply talk about life and share a laugh."
   ]);
 
   translateAll("#contato h2, #contato h3", [
