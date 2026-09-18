@@ -59,9 +59,10 @@
 
   translateAll("#sobre h2, #sobre p", [
     "About Me",
-    `Hi, I'm Paulo. Nice to meet you! I am <span id="current-age">34</span> years old, born on day 256 (September 13), which, coincidentally, is Programmer's Day. I was born in the state of São Paulo, lived in Ferraz de Vasconcelos for 32 years, and currently live in São Paulo city.`,
-    `I have worked in software development since 2011, when I started as an IT intern. I began studying programming in 2008, and nearly my entire career has been built on the .NET platform. I completed an MBA in Corporate Solutions and Cloud Computing on the .NET Platform in 2017 and an MBA in Data Engineering in 2026, both at <a href="https://www.fiap.com.br/" target="_blank" rel="noopener">FIAP</a>. During the Data Engineering MBA, I worked with data architecture, data pipelines, and analytics solutions, building a solid foundation for further study in these areas.`,
-    `My experience has always focused on the web. I have worked with every kind of ASP.NET application (Web Forms, MVC, APIs, and SignalR), later moving to .NET Core with Blazor and SQL Server. I currently work at Dimensa as a developer and technical reference for Trindade's legacy projects; I was a partner at Trindade from 2021 to 2025. In this role, I maintain legacy systems. I enjoy studying performance, software architecture, and, more recently, data and AI.`
+    `Hi, I'm Paulo. Nice to meet you! I am <span id="current-age">34</span> years old and was born on September 13, Programmer's Day. I am from the state of São Paulo, lived in Ferraz de Vasconcelos for 32 years, and now live in São Paulo city.`,
+    `I have studied programming since 2008 and worked in software development since 2011, focusing on web applications, .NET, and SQL Server. I completed two MBAs at <a href="https://www.fiap.com.br/" target="_blank" rel="noopener">FIAP</a>: Corporate Solutions and Cloud Computing on the .NET Platform (2017) and Data Engineering (2026).`,
+    `I was a partner at Trindade Tecnologia from 2021 to 2025, contributing to strategic decisions and product development. Today, at Dimensa, I am a developer and technical reference for Trindade's legacy systems. I continue studying performance, software architecture, data, and artificial intelligence.`,
+    "My greatest dream is to build a family of my own as my most important goal in life."
   ]);
 
   translateAll("#estudos h2, #estudos h3, #estudos p, #estudos li", [
@@ -123,8 +124,10 @@
 
   translateAll("#hobbies h2, #hobbies h3, #hobbies p", [
     "My Hobbies",
-    "Visiting parks",
-    "I enjoy being close to nature and visiting parks to walk and maintain balance in my life.",
+    "Learning about technology",
+    "Learning about technology is a longtime hobby that remains part of my life. I am currently exploring the data engineering topics I studied during my recently completed MBA in greater depth, as well as studying artificial intelligence and Next.js.",
+    "Walking and enjoying nature",
+    "I enjoy being close to nature and visiting parks to walk and maintain balance in my life. My favorite park is Parque Centenário da Imigração Japonesa in Mogi das Cruzes.",
     "Soccer and São Paulo FC",
     "I am passionate about soccer and support São Paulo FC. I have followed the sport since 2001 and have gone to the stadium whenever possible since 2016. On September 24, 2023, during the Copa do Brasil final, I experienced my greatest moment as a fan in the stadium when the club completed its collection of major titles!",
     "Swimming",
@@ -132,23 +135,16 @@
     "Wine",
     "I also enjoy a good wine—to celebrate, accompany a good movie or good company, listen to music on Spotify, or simply relax after a demanding day.",
     "Dancing",
-    "Dancing has become a way to break out of my routine and take care of myself. Forró, a long-held dream I finally decided to pursue, has been like therapy for me. I am now also beginning to learn sertanejo universitário, a Brazilian style of country dance.",
-    "Going out more",
-    "Living in São Paulo, I have made an effort to go out more—whether to attend parties and concerts, meet new people, or share new experiences with friends. I want to keep broadening my horizons by exploring restaurants, theaters, and the many other places and activities the city offers."
+    "Dancing has become a way to break out of my routine and take care of myself. Forró, a long-held dream I finally decided to pursue, has been like therapy for me. I currently take forró and sertanejo universitário classes at Escola Mega Dança in downtown São Paulo.",
+    "Spending time with friends",
+    "I have a small circle of friends, but I enjoy being with them and sharing good moments. Whether we go out, watch a movie, grab something to eat, or simply talk about life and share a laugh."
   ]);
 
   translateAll("#contato h2, #contato h3", [
     "Contact",
-    "Phone",
     "Email addresses",
     "Instagram",
-    "Facebook"
+    "Facebook",
+    "LinkedIn"
   ]);
-
-  translateAll("footer p", [
-    `&copy; <span id="current-year">2026</span> Paulo Fernando. All rights reserved.`
-  ]);
-
-  const linkedInBadge = document.querySelector(".LI-profile-badge");
-  if (linkedInBadge) linkedInBadge.dataset.locale = "en_US";
 })();
