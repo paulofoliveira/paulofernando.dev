@@ -123,6 +123,8 @@
 
   translateAll("#hobbies h2, #hobbies h3, #hobbies p", [
     "My Hobbies",
+    "Learning about technology",
+    "Learning about technology is a longtime hobby that remains part of my life. I am currently exploring the data engineering topics I studied during my recently completed MBA in greater depth, as well as studying artificial intelligence and Next.js.",
     "Visiting parks",
     "I enjoy being close to nature and visiting parks to walk and maintain balance in my life.",
     "Soccer and São Paulo FC",
