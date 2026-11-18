@@ -59,9 +59,9 @@
 
   translateAll("#sobre h2, #sobre p", [
     "About Me",
-    `Hi, I'm Paulo. Nice to meet you! I am <span id="current-age">34</span> years old and was born on September 13, Programmer's Day. I am from the state of São Paulo, lived in Ferraz de Vasconcelos for 32 years, and now live in São Paulo city.`,
+    `Hi, I'm Paulo. Nice to meet you! I am <span id="current-age">35</span> years old and was born on September 13, Programmer's Day. I am from the state of São Paulo, lived in Ferraz de Vasconcelos, and now live in São Paulo city.`,
     `I have studied programming since 2008 and worked in software development since 2011, focusing on web applications, .NET, and SQL Server. I completed two MBAs at <a href="https://www.fiap.com.br/" target="_blank" rel="noopener">FIAP</a>: Corporate Solutions and Cloud Computing on the .NET Platform (2017) and Data Engineering (2026).`,
-    `I was a partner at Trindade Tecnologia from 2021 to 2025, contributing to strategic decisions and product development. Today, at Dimensa, I am a developer and technical reference for Trindade's legacy systems. I continue studying performance, software architecture, data, and artificial intelligence.`,
+    `I was a partner at Trindade Tecnologia from 2021 to 2025, contributing to strategic decisions and product development. Following Trindade's sale, I participated in integrations with Agger and Dimensa, working as a developer and technical point of contact for Trindade's legacy systems. I left in October 2026, during the integration with Evertec. I continue studying performance, software architecture, data, and artificial intelligence.`,
     "My greatest dream is to build a family of my own as my most important goal in life."
   ]);
 
@@ -117,9 +117,10 @@
     "In February 2026, I began a new chapter at Dimensa as the lead developer and technical reference for Trindade's legacy projects, supporting the evolution and restructuring of products within the Insurance business unit.",
     "July 2026",
     `I completed the MBA in Data Engineering at <a href="https://www.fiap.com.br/" target="_blank" rel="noopener">FIAP</a>, where I worked with data architecture, data pipelines, analytics solutions, artificial intelligence, open-source models, and tools such as LangChain, Ollama, and LM Studio. This gave me a solid foundation for continuing my studies.`,
+    "October 2026",
+    "I concluded my time at Dimensa during the transition with Evertec, bringing my journey at the company to a close after participating in the integrations following Trindade's sale.",
     "More about me",
-    "Throughout this period, I took on freelance work—always in the .NET ecosystem—and contributed to other projects, including the maintenance of existing systems and a startup using MySQL, APIs, and a new Blazor WebAssembly application. I migrated environments from AWS to Google Cloud and gained experience with database administration and maintenance routines in both SQL Server and MySQL.",
-    "Between 2021 and 2025, I was a partner at Trindade Tecnologia. Beyond my technical role, I actively participated in strategic decisions, product evolution, and the direction of the business. During that period, I had the opportunity to take part in the company's sale and experience an M&A process firsthand."
+    "Throughout this period, I took on freelance work—always in the .NET ecosystem—and contributed to other projects, including the maintenance of existing systems and a startup using MySQL, APIs, and a new Blazor WebAssembly application. I migrated environments from AWS to Google Cloud and gained experience with database administration and maintenance routines in both SQL Server and MySQL."
   ]);
 
   translateAll("#hobbies h2, #hobbies h3, #hobbies p", [
@@ -127,17 +128,15 @@
     "Learning about technology",
     "Learning about technology is a longtime hobby that remains part of my life. I am currently exploring the data engineering topics I studied during my recently completed MBA in greater depth, as well as studying artificial intelligence and Next.js.",
     "Walking and enjoying nature",
-    "I enjoy being close to nature and visiting parks to walk and maintain balance in my life. My favorite park is Parque Centenário da Imigração Japonesa in Mogi das Cruzes.",
+    "I enjoy being close to nature, visiting parks, walking, and going for light runs.",
     "Soccer and São Paulo FC",
-    "I am passionate about soccer and support São Paulo FC. I have followed the sport since 2001 and have gone to the stadium whenever possible since 2016. On September 24, 2023, during the Copa do Brasil final, I experienced my greatest moment as a fan in the stadium when the club completed its collection of major titles!",
+    "I love soccer and support São Paulo FC. I enjoy going to the stadium and had the joy of watching the team win the 2023 Copa do Brasil in person.",
     "Swimming",
-    "In 2023, I began making several changes in my life. One of them was taking on the challenge of learning to swim. Beyond being physical exercise, the connection with water is unquestionably therapeutic in everyday life. I had to take a break because of changes in my life, but I intend to return soon!",
-    "Wine",
-    "I also enjoy a good wine—to celebrate, accompany a good movie or good company, listen to music on Spotify, or simply relax after a demanding day.",
+    "In 2023, I took on the challenge of learning to swim. Beyond being physical exercise, the connection with water is therapeutic in everyday life.",
     "Dancing",
-    "Dancing has become a way to break out of my routine and take care of myself. Forró, a long-held dream I finally decided to pursue, has been like therapy for me. I currently take forró and sertanejo universitário classes at Escola Mega Dança in downtown São Paulo.",
+    "I take forró and sertanejo universitário classes in São Paulo. Dancing is a way to break out of my routine and take care of myself.",
     "Spending time with friends",
-    "I have a small circle of friends, but I enjoy being with them and sharing good moments. Whether we go out, watch a movie, grab something to eat, or simply talk about life and share a laugh."
+    "I have a small circle of friends, but I enjoy being with them and sharing good moments: going out, watching a movie, having some wine, grabbing something to eat, or simply talking about life and sharing a laugh."
   ]);
 
   translateAll("#contato h2, #contato h3", [
