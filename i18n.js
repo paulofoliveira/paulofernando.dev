@@ -59,9 +59,9 @@
 
   translateAll("#sobre h2, #sobre p", [
     "About Me",
-    `Hi, I'm Paulo. Nice to meet you! I am <span id="current-age">34</span> years old and was born on September 13, Programmer's Day. I am from the state of São Paulo, lived in Ferraz de Vasconcelos for 32 years, and now live in São Paulo city.`,
+    `Hi, I'm Paulo. Nice to meet you! I am <span id="current-age">35</span> years old and was born on September 13, Programmer's Day. I am from the state of São Paulo, lived in Ferraz de Vasconcelos, and now live in São Paulo city.`,
     `I have studied programming since 2008 and worked in software development since 2011, focusing on web applications, .NET, and SQL Server. I completed two MBAs at <a href="https://www.fiap.com.br/" target="_blank" rel="noopener">FIAP</a>: Corporate Solutions and Cloud Computing on the .NET Platform (2017) and Data Engineering (2026).`,
-    `I was a partner at Trindade Tecnologia from 2021 to 2025, contributing to strategic decisions and product development. Today, at Dimensa, I am a developer and technical reference for Trindade's legacy systems. I continue studying performance, software architecture, data, and artificial intelligence.`,
+    `I was a partner at Trindade Tecnologia from 2021 to 2025, contributing to strategic decisions and product development. Following Trindade's sale, I participated in integrations with Agger and Dimensa, working as a developer and technical point of contact for Trindade's legacy systems. I left in October 2026, during the integration with Evertec. I continue studying performance, software architecture, data, and artificial intelligence.`,
     "My greatest dream is to build a family of my own as my most important goal in life."
   ]);
 
