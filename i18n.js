@@ -117,9 +117,10 @@
     "In February 2026, I began a new chapter at Dimensa as the lead developer and technical reference for Trindade's legacy projects, supporting the evolution and restructuring of products within the Insurance business unit.",
     "July 2026",
     `I completed the MBA in Data Engineering at <a href="https://www.fiap.com.br/" target="_blank" rel="noopener">FIAP</a>, where I worked with data architecture, data pipelines, analytics solutions, artificial intelligence, open-source models, and tools such as LangChain, Ollama, and LM Studio. This gave me a solid foundation for continuing my studies.`,
+    "October 2026",
+    "I concluded my time at Dimensa during the transition with Evertec, bringing my journey at the company to a close after participating in the integrations following Trindade's sale.",
     "More about me",
-    "Throughout this period, I took on freelance work—always in the .NET ecosystem—and contributed to other projects, including the maintenance of existing systems and a startup using MySQL, APIs, and a new Blazor WebAssembly application. I migrated environments from AWS to Google Cloud and gained experience with database administration and maintenance routines in both SQL Server and MySQL.",
-    "Between 2021 and 2025, I was a partner at Trindade Tecnologia. Beyond my technical role, I actively participated in strategic decisions, product evolution, and the direction of the business. During that period, I had the opportunity to take part in the company's sale and experience an M&A process firsthand."
+    "Throughout this period, I took on freelance work—always in the .NET ecosystem—and contributed to other projects, including the maintenance of existing systems and a startup using MySQL, APIs, and a new Blazor WebAssembly application. I migrated environments from AWS to Google Cloud and gained experience with database administration and maintenance routines in both SQL Server and MySQL."
   ]);
 
   translateAll("#hobbies h2, #hobbies h3, #hobbies p", [
