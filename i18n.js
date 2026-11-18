@@ -128,17 +128,15 @@
     "Learning about technology",
     "Learning about technology is a longtime hobby that remains part of my life. I am currently exploring the data engineering topics I studied during my recently completed MBA in greater depth, as well as studying artificial intelligence and Next.js.",
     "Walking and enjoying nature",
-    "I enjoy being close to nature and visiting parks to walk and maintain balance in my life. My favorite park is Parque Centenário da Imigração Japonesa in Mogi das Cruzes.",
+    "I enjoy being close to nature, visiting parks, walking, and going for light runs.",
     "Soccer and São Paulo FC",
-    "I am passionate about soccer and support São Paulo FC. I have followed the sport since 2001 and have gone to the stadium whenever possible since 2016. On September 24, 2023, during the Copa do Brasil final, I experienced my greatest moment as a fan in the stadium when the club completed its collection of major titles!",
+    "I love soccer and support São Paulo FC. I enjoy going to the stadium and had the joy of watching the team win the 2023 Copa do Brasil in person.",
     "Swimming",
-    "In 2023, I began making several changes in my life. One of them was taking on the challenge of learning to swim. Beyond being physical exercise, the connection with water is unquestionably therapeutic in everyday life. I had to take a break because of changes in my life, but I intend to return soon!",
-    "Wine",
-    "I also enjoy a good wine—to celebrate, accompany a good movie or good company, listen to music on Spotify, or simply relax after a demanding day.",
+    "In 2023, I took on the challenge of learning to swim. Beyond being physical exercise, the connection with water is therapeutic in everyday life.",
     "Dancing",
-    "Dancing has become a way to break out of my routine and take care of myself. Forró, a long-held dream I finally decided to pursue, has been like therapy for me. I currently take forró and sertanejo universitário classes at Escola Mega Dança in downtown São Paulo.",
+    "I take forró and sertanejo universitário classes in São Paulo. Dancing is a way to break out of my routine and take care of myself.",
     "Spending time with friends",
-    "I have a small circle of friends, but I enjoy being with them and sharing good moments. Whether we go out, watch a movie, grab something to eat, or simply talk about life and share a laugh."
+    "I have a small circle of friends, but I enjoy being with them and sharing good moments: going out, watching a movie, having some wine, grabbing something to eat, or simply talking about life and sharing a laugh."
   ]);
 
   translateAll("#contato h2, #contato h3", [
